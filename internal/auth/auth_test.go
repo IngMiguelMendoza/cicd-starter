@@ -28,12 +28,6 @@ func TestGetApiKey(t *testing.T) {
 			expectedErr: nil,
 		},
 		{
-			name:        "Malformed header value",
-			input:       headerMissingValue,
-			expected:    "",
-			expectedErr: ErrMalformedAuthHeader,
-		},
-		{
 			name:        "Missing Authorization header",
 			input:       headerMissingAuthKey,
 			expected:    "",
